@@ -5,42 +5,56 @@ body {
     margin: 0 auto;
     width: 100%;
     height: 400px;
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(3, auto) ;
+    grid-template-rows: repeat(3, auto) ; */
 }
 
 body header {
-    grid-row: 1;
-    grid-column: 1/span 4;
-    display: flex;
+    /* grid-row: 1;
+    grid-column: 1/span 4; */
+    /* display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-between; */
 }
 
 
 body header nav {
-   
+    display: flex;
+    flex-direction: row;
     height: max-content;
-    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: clamp(20px, 2vw, 1280px); */
+   
+    /* width: 100%; */
+}
+
+body header nav img{
+    width: 45px;
+    /* height: 100%; */
+    object-fit: cover;
 }
 
 body header nav ul {
-    width: 100%;
-  
+    /* max-width: 80%; */
+    max-width: 760px;
+    /* width: auto; */
+   justify-self:right;
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     list-style-type: none;
     justify-content: space-between;
     padding: 0;
-  
+    gap: clamp(3px, 1vw, 20px);
+    padding-right: 20px;
    
 }
 
 body header nav ul li{
   height: fit-content;
-  width: 100px;
+  width: 93px;
   border-bottom: 2px solid rgba(118, 118, 118, 0.537);
   transition: all 0.1s ease-in-out;
   cursor: pointer;
