@@ -134,7 +134,7 @@ body main .container__details .summary {
     grid-column: 2;
 }
 
-body main .container__details .skills {
+body main .container__details .skills-and-languages {
     grid-row: 2;
     grid-column: 1;
 }
