@@ -1,12 +1,20 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
     max-width: 1280px;
     margin: 0 auto;
     width: 100%;
+    font-family: Montserrat, sans-serif;
+   
 }
 
 body header {
+    height: 80px;
+   
     /* grid-row: 1;
     grid-column: 1/span 4; */
     /* display: flex;
@@ -25,29 +33,61 @@ a {
 
 ul {
     padding: 0;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 article {
-    padding-left: 70px;
+    padding-left: 35px;
+}
+
+h1, h3 {
+    font-weight: 600;
+    margin: 0;
+    color: #000000af;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+  
+}
+
+h2 {
+    font-weight: 600;
+    color: #000000af;
+    background-color: #add3bff5;
+    max-width: 300px;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+
+p, li {
+    font-weight: 300;
+    font-size: 1em;
 }
 
 
 body header nav {
+    width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    height: max-content;
+   
     justify-content: space-between;
     align-items: center;
 }
 
 body header nav img{
     width: 45px;
-
     object-fit: cover;
 }
 
 body header nav ul {
-    max-width: 760px;
+    width: 100%;
+    
     justify-self:right;
     display: flex;
     flex-direction: row;
@@ -56,11 +96,12 @@ body header nav ul {
     padding: 0;
     gap: clamp(3px, 1vw, 20px);
     padding-right: 20px;
+    
 }
 
 body header nav ul li{
   height: fit-content;
-  width: 93px;
+  width: 110px;
   border-bottom: 2px solid rgba(118, 118, 118, 0.537);
   transition: all 0.1s ease-in-out;
   cursor: pointer;
@@ -71,7 +112,7 @@ body header nav ul li a{
     display: block;
     width: 100%;
     height: 100%;
-    font-size: 15px;
+    font-size: 14px;
     text-decoration: none;
     color: black;
     cursor: pointer;
@@ -82,6 +123,7 @@ body header nav ul li a{
 
 body header nav ul li:hover{
     border-bottom: 2.1px solid rgba(0, 0, 0, 0.512);
+    font-weight: 600;
 }
 
 body header nav ul li:hover a{
@@ -98,27 +140,44 @@ body main {
 body main .container__personal-data {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    background-color: #c5c5c5;
+    width: 100%;
+    border-radius: 10px;
+
 }
 
 
 body main .container__personal-data .personal-data__logo-info {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    /* width: 100%; */
     text-align: center;
+}
+
+body main .container__personal-data img {
+    box-shadow: 0px 0px 0px 6px white;
+    border-radius: 100%;
 }
 
 body main .container__details {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: repeat(5, auto);
+    width: 100%;
+   
 }
 
 body main .container__details .contacts {
     grid-row: 1;
     grid-column: 1;
+    
+   
+}
+
+body main .container__details .contacts ul {
+    margin: 0;
 }
 
 body main .container__details .contacts ul li {
@@ -132,6 +191,7 @@ body main .container__details .contacts ul li img {
 body main .container__details .summary {
     grid-row: 1;
     grid-column: 2;
+   
 }
 
 body main .container__details .skills-and-languages-and-hobbies {
@@ -146,24 +206,79 @@ body main .container__details .code-example {
     grid-row: 2;
     grid-column: 2;
     padding-left: 0;
+    background-color: #e3e3e3;
 }
 
 body main .container__details .code-example h2 {
     grid-row: 2;
     grid-column: 2;
-    padding-left: 70px;
+    margin-left: 35px;
 }
 
 body main .container__details .code-example pre {
-    max-width: 100%;
     overflow-x: auto;
     text-align: left;
     align-self: self-start;
+    font-size: 1em;
+    display: inline-block;
+    white-space: pre;
+    width: 80%;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-left: 20px;
    
 }
 
 body main .container__details .code-example pre code {
-   /* white-space: pre-wrap; */
+    display: block;
+    width: 100%;
+}
+
+body main .container__details .education {
+    grid-column: 1;
+}
+
+body footer {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+body footer figure {
+    margin: 0;
+    width: 30px;
+    height: 30px;
+}
+
+body footer .git {
+   
+}
+
+body footer .git a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+body footer .git a img {
+    width: 20px;
+    height: 20px;
+    padding-right: 10px;
+}
+
+@media (max-width: 860px){
+    body header nav {
+        flex-direction: column;
+    }
+
+    body header nav img {
+        margin-top: 20px;
+        width: 70px;
+        height: 70px;
+    }
 }
 
 

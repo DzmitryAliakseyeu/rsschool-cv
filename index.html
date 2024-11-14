@@ -5,20 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <link rel="icon" href="./img/square-cv-svgrepo-com.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+
     <title>CV</title>
   </head>
   <body>
     <header>
         <nav>
-            <img src="./img/square-cv-svgrepo-com.svg" alt="logo-image">
+            <!-- <img src="./img/square-cv-svgrepo-com.svg" alt="logo-image"> -->
             <ul>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Summary</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Code Example</a></li>
-                <li><a href="#">Education</a></li>
-                <li><a href="#">Languages</a></li>
-                <li><a href="#">Hobbies</a></li>
+                <li><a href="#contacts-i">Contacts</a></li>
+                <li><a href="#summary-i">Summary</a></li>
+                <li><a href="#skills-i">Skills</a></li>
+                <li><a href="#code-examle-i">Code Example</a></li>
+                <li><a href="#education-i">Education</a></li>
+                <li><a href="#languages-i">Languages</a></li>
+                <li><a href="#hobbies-i">Hobbies</a></li>
             </ul>
         </nav>
        
@@ -36,24 +40,25 @@
         </section>
 
         <section class="container__details">
-            <article class="contacts">
+            <article class="contacts" id="contacts-i">
                 <h2>Contacts:</h2>
                 <ul>
-                    <li><img src="./img/flag-svgrepo-com.svg" alt="" width="15px">Country: Poland</li>
-                    <li><img src="./img/location-pin-svgrepo-com.svg" alt="" width="15px">City: Wroclaw</li>
-                    <li><img src="./img/post-office-svgrepo-com.svg" alt="" width="15px">Postal code: 52-131</li>
+                    
+                    <li><img src="./img/location-pin-svgrepo-com.svg" alt="" width="15px">Address: Poland, Wroclaw</li>
+                    <li><img src="./img/post-office-svgrepo-com.svg" alt="" width="15px"><a href="mailto:dmitry.alekseev.s@mail.com">Dmitry.alekseev.s@gmail.com</a></li>
                     <li><img src="./img/phone-number-svgrepo-com.svg" alt="" width="15px"><a href="tel:+48690410321">+ 48 690 410 321</a></li>
-                    <li><img src="./img/github-142-svgrepo-com.svg" alt="" width="15px"><a href="https://github.com/DzmitryAliakseyeu">Git</a></li>
+                    <li><img src="./img/discord-svgrepo-com.svg" alt="" width="15px"><a href="https://discord.com/dzmitryaliakseyeu" target="_blank">Discord</a></li>
+                    <li><img src="./img/github-142-svgrepo-com.svg" alt="" width="15px"><a href="https://github.com/DzmitryAliakseyeu" target="_blank">Git</a></li>
                 </ul>
             </article>
 
-            <article>
+            <article class="summary">
                 <h2>Summary:</h2>
                 <p>My main purpose for taht course it’s improving my programming skills and English. I have some experience in creating web pages, web applications, scripting. Previously, I finished IT Academy in Belarus, RS school - stages 0-2 in Russian.</p>
             </article>
 
             <div class="skills-and-languages-and-hobbies">
-                <article class="skills">
+                <article class="skills" id="skills-i">
                     <h2>Skills:</h2>
                     <ul>
                         <li>HTML</li>
@@ -69,7 +74,7 @@
                         <li>Scrum</li>
                     </ul>
                 </article>
-                <article class="languages">
+                <article class="languages" id="languages-i">
                     <h2>Languages:</h2>
                     <ul>
                         <li>Russian - Native</li>
@@ -78,7 +83,7 @@
                         <li>Polish - A2</li>
                     </ul>
                 </article>
-                <article class="hobbies">
+                <article class="hobbies" id="hobbies-i">
                     <h2>Hobbies:</h2>
                     <ul>
                         <li>Learning new languages</li>
@@ -88,56 +93,70 @@
                         <li>Listening to music</li>
                     </ul>
                 </article>
+                <article class="education" id="education-i">
+                    <h2>Education:</h2>
+                    <ul>
+                        <li>Private Institute of Management and Entrepreneurship (lawyer)</li>
+                        <li>IT Academy (HTML,CSS,JS)</li>
+                        <li>RS School (in process…)</li>
+                    </ul>
+                </article>
             </div>
            
 
-            <article class="code-example">
+            <article class="code-example" id="code-example-i">
                 <h2>Code example:</h2>
-            <pre><code>
-                function check(str, bracketsConfig) {
-                    let objBrackets = {};
-                    let openBrackets = [];
-                    let sameBrackets = [];
-            
-                    bracketsConfig.forEach(pair => {
-                        objBrackets[pair[1]] = pair[0];
-                        openBrackets.push(pair[0]);
-                        if (pair[0] === pair[1]) sameBrackets.push(pair[0]);
-                    });
-            
-                    let stack = [];
-            
-                    for (let i = 0; i < str.length; i++) {
-                        let current = str[i];
+    <pre><code>
+    function check(str, bracketsConfig) {
+        let objBrackets = {};
+        let openBrackets = [];
+        let sameBrackets = [];
 
-                        if (openBrackets.includes(current)) {
-                            if (sameBrackets.includes(current)) {
-                                if (stack[stack.length - 1] === current) {
-                                stack.pop();
-                                } else {
-                                stack.push(current);
-                                }
-                            } else {
-                                stack.push(current);
-                            }
-                        } else {
-                            if (stack.length === 0 
-                            || stack.pop() !== objBrackets[current]) {
-                                return false;
-                            }
-                        }
+        bracketsConfig.forEach(pair => {
+            objBrackets[pair[1]] = pair[0];
+            openBrackets.push(pair[0]);
+            if (pair[0] === pair[1]) sameBrackets.push(pair[0]);
+        });
+
+        let stack = [];
+
+        for (let i = 0; i < str.length; i++) {
+            let current = str[i];
+
+            if (openBrackets.includes(current)) {
+                if (sameBrackets.includes(current)) {
+                    if (stack[stack.length - 1] === current) {
+                    stack.pop();
+                    } else {
+                    stack.push(current);
                     }
-            
-                    return stack.length === 0;
+                } else {
+                    stack.push(current);
                 }
-            </code></pre>
-                
+            } else {
+                if (stack.length === 0 
+                || stack.pop() !== objBrackets[current]) {
+                    return false;
+                }
+            }
+        }
+
+        return stack.length === 0;
+    }
+    </code></pre>
             </article>
 
-           
+            
         </section>
 
     </main>
-    <footer></footer>
+    <footer>
+        <figure>
+            <a href="https://rs.school/" target="_blank"><img src="./img/rss-logo.c19ce1b4.svg" alt="rss-logo"></a>
+        </figure>
+        <p>2024</p>
+        <p class="git"><a href="https://github.com/DzmitryAliakseyeu" target="_blank"><img src="./img/github-142-svgrepo-com.svg" alt="git-logo">GitHub</a></p>
+     
+    </footer>
   </body>
 </html>
