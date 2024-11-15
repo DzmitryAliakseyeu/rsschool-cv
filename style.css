@@ -92,12 +92,15 @@ body header nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0;
     gap: clamp(3px, 1vw, 20px);
-    padding-right: 20px;
+    margin-left: 0;
+    /* padding-right: 20px; */
     
 }
+
+
 
 body header nav ul li{
   height: fit-content;
@@ -107,6 +110,10 @@ body header nav ul li{
   cursor: pointer;
   box-sizing: border-box;
 }
+
+
+
+
 
 body header nav ul li a{
     display: block;
@@ -120,6 +127,8 @@ body header nav ul li a{
     line-height: 2em;
     transition: all 0.1s ease-in-out; 
 }
+
+
 
 body header nav ul li:hover{
     border-bottom: 2.1px solid rgba(0, 0, 0, 0.512);
@@ -165,7 +174,8 @@ body main .container__details {
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: repeat(5, auto);
-    width: 100%;
+    justify-content: space-between;
+    column-gap: 30px;
    
 }
 
@@ -182,6 +192,14 @@ body main .container__details .contacts ul {
 
 body main .container__details .contacts ul li {
     list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+body main .container__details .contacts ul li:nth-of-type(2) {
+    font-size: 14px;
 }
 
 body main .container__details .contacts ul li img {
@@ -207,6 +225,7 @@ body main .container__details .code-example {
     grid-column: 2;
     padding-left: 0;
     background-color: #e3e3e3;
+    width: 100%;
 }
 
 body main .container__details .code-example h2 {
@@ -226,7 +245,6 @@ body main .container__details .code-example pre {
     background-color: #fff;
     border-radius: 20px;
     margin-left: 20px;
-   
 }
 
 body main .container__details .code-example pre code {
@@ -248,36 +266,30 @@ body main .container__details .my-projects .projects {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
+    width: 100%;
 }
-
-
 
 body main .container__details .my-projects .block-project {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 260px;
+    width: 200px;
     height: fit-content;
-    
-    
 }
 
 body main .container__details .my-projects .projects .block-project img{
     width: 100%;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 body main .container__details .my-projects .projects .block-project p {
-    /* border: 1px solid black;
-    border-radius: 5px; */
     width: 50%;
     height: 50px;
     text-align: center;
-  margin: 0;
-    /* line-height: 3em; */
-    
+    margin: 0;
 }
 
 body main .container__details .my-projects .projects .block-project p a {
@@ -295,34 +307,49 @@ body main .container__details .my-projects .projects .block-project p a:hover {
 
 
 body footer {
-
+    background-color: #c5c5c5;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 20px;
+  
+}
+
+body footer p {
+    font-weight: 500;
 }
 
 body footer figure {
     margin: 0;
-    width: 30px;
+    width: 80px;
     height: 30px;
 }
 
-body footer .git {
-   
+body footer figure a {
+    display: block;
 }
 
 body footer .git a {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-weight: 500;
 }
 
 body footer .git a img {
     width: 20px;
     height: 20px;
     padding-right: 10px;
+}
+
+@media (max-width: 935px){
+    body main .container__details .contacts {
+        font-size: 14px;
+    }
+
+    body main .container__details .contacts ul li:nth-of-type(2) {
+        font-size: 10px;
+    }
 }
 
 @media (max-width: 860px){
@@ -334,6 +361,59 @@ body footer .git a img {
         margin-top: 20px;
         width: 70px;
         height: 70px;
+    }
+}
+
+@media (max-width: 675px){
+    article, h2 {
+        padding: 0;
+        width: 280px;
+    }
+
+   
+
+    body main .container__personal-data {
+        flex-direction: column;
+        padding-bottom: 20px;
+       
+    }
+
+    body main .container__details {
+        grid-template-columns: 0;
+        grid-template-rows: repeat(6, auto);
+        column-gap: 0px;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    body main .container__details .contacts {
+        grid-row: 1;
+    }
+
+    body main .container__details .summary {
+        grid-row: 2;
+    }
+
+    body main .container__details .skills-and-languages-and-hobbies {
+        grid-row: 3;
+    }
+
+    body main .container__details .code-example {
+        grid-row: 4;
+        max-width: 300px;
+    }
+
+    body main .container__details .code-example h2 {
+        margin-left: 0;
+    }
+
+    body main .container__details .education {
+        grid-row: 5;
+        
+    }
+
+    body main .container__details .my-projects {
+        grid-row: 6;
     }
 }
 
