@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
@@ -9,17 +10,10 @@ body {
     margin: 0 auto;
     width: 100%;
     font-family: Montserrat, sans-serif;
-   
 }
 
 body header {
     height: 80px;
-   
-    /* grid-row: 1;
-    grid-column: 1/span 4; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
 }
 
 section {
@@ -39,6 +33,13 @@ ul {
     gap: 5px;
 }
 
+hr {
+    display: block;
+    width: 100%;
+    font-size: 2px;
+    background-color: #000000;
+}
+
 article {
     padding-left: 35px;
 }
@@ -49,10 +50,13 @@ h1, h3 {
     color: #000000af;
 }
 
+h4 {
+    display: none;
+}
+
 h1 {
     font-size: 2.5em;
     margin-bottom: 10px;
-  
 }
 
 h2 {
@@ -69,13 +73,11 @@ p, li {
     font-size: 1em;
 }
 
-
 body header nav {
     width: 100%;
     height: 100%;
     display: flex;
     flex-direction: row;
-   
     justify-content: space-between;
     align-items: center;
 }
@@ -87,7 +89,6 @@ body header nav img{
 
 body header nav ul {
     width: 100%;
-    
     justify-self:right;
     display: flex;
     flex-direction: row;
@@ -96,11 +97,23 @@ body header nav ul {
     padding: 0;
     gap: clamp(3px, 1vw, 20px);
     margin-left: 0;
-    /* padding-right: 20px; */
-    
 }
 
+body header nav ul li:nth-of-type(1){
+    display: none;
+}
 
+body header nav ul li:nth-of-type(2){
+    display: none;
+}
+
+body header nav ul li:nth-of-type(3){
+    display: none;
+}
+
+body header nav ul li:nth-of-type(4){
+    display: none;
+}
 
 body header nav ul li{
   height: fit-content;
@@ -110,10 +123,6 @@ body header nav ul li{
   cursor: pointer;
   box-sizing: border-box;
 }
-
-
-
-
 
 body header nav ul li a{
     display: block;
@@ -127,8 +136,6 @@ body header nav ul li a{
     line-height: 2em;
     transition: all 0.1s ease-in-out; 
 }
-
-
 
 body header nav ul li:hover{
     border-bottom: 2.1px solid rgba(0, 0, 0, 0.512);
@@ -154,14 +161,11 @@ body main .container__personal-data {
     background-color: #c5c5c5;
     width: 100%;
     border-radius: 10px;
-
 }
-
 
 body main .container__personal-data .personal-data__logo-info {
     display: flex;
     flex-direction: column;
-    /* width: 100%; */
     text-align: center;
 }
 
@@ -204,6 +208,7 @@ body main .container__details .contacts ul li:nth-of-type(2) {
 
 body main .container__details .contacts ul li img {
     padding-right: 10px;
+    width: 15px;
 }
 
 body main .container__details .summary {
@@ -342,6 +347,17 @@ body footer .git a img {
     padding-right: 10px;
 }
 
+.menu-button {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: space-around;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
 @media (max-width: 935px){
     body main .container__details .contacts {
         font-size: 14px;
@@ -365,17 +381,101 @@ body footer .git a img {
 }
 
 @media (max-width: 675px){
+    body {
+        overflow-x: hidden;
+    }
+
     article, h2 {
         padding: 0;
         width: 280px;
     }
 
-   
+    article {
+        padding-left: 10px;
+    }
+
+    h2 {
+        font-size: 1.1em;
+        padding: 5px;
+    }
+
+    .menu-button {
+        display: flex;
+    }
+
+    header {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        position: relative;
+    }
+
+    header .hidden-nav {
+        background-color: #fff;
+        position: absolute;
+        z-index: 0;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        left: 100%;
+        transition: all 0.5s;
+    }
+
+    
+    header .visible-nav {
+        background-color: #fff;
+        position: absolute;
+        z-index: 1000;
+        height: 100vh;
+        width: 100%;
+        top: 80px;
+        left: 0;
+        transition: all 0.5s;
+    }
+
+    body header nav ul{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    body header nav ul li {
+        width: 60%;
+        margin: 0 auto;
+        border: none;
+    }
+
+    body header nav ul li:nth-of-type(1){
+        display: block;
+    }
+
+    body header nav ul li:nth-of-type(2){
+        display: block;
+    }
+
+    body header nav ul li:nth-of-type(3){
+        display: block;
+    }
+
+    body header nav ul li:nth-of-type(4){
+        display: block;
+    }
 
     body main .container__personal-data {
         flex-direction: column;
         padding-bottom: 20px;
-       
+    }
+
+    body main .container__personal-data img {
+        width: 180px;
+        box-shadow: 0px 0px 0px 4px white;
+    }
+
+    body main .container__personal-data .personal-data__logo-info h1{
+        font-size: 1.5em;
+    }
+
+    body main .container__personal-data .personal-data__logo-info h3{
+        font-size: 1em;
     }
 
     body main .container__details {
@@ -404,12 +504,11 @@ body footer .git a img {
     }
 
     body main .container__details .code-example h2 {
-        margin-left: 0;
+        margin-left: 10px;
     }
 
     body main .container__details .education {
         grid-row: 5;
-        
     }
 
     body main .container__details .my-projects {
