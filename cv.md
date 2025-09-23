@@ -1,14 +1,13 @@
 # Dzmitry Aliakseyeu
 
-### Junior Frontend Developer
+## Junior Frontend Developer
 
-## Contacts:
+### Contact Information:
 
-- Country: Poland;
-- City: Wroclaw;
-- Postal code: 52-131;
-- Phone number: +48690410321;
-- [Git](https://github.com/DzmitryAliakseyeu)
+Mobile: +48690410321
+Email: [](dmitry.alekseev.s@gmail.com)
+LinkedIn: [](www.linkedin.com/in/dzmitry-aliakseyeu-16a388234)
+Location: Wrocław, Dolnośląskie, Polska
 
 ---
 
