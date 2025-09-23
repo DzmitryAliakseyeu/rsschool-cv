@@ -20,6 +20,14 @@ through hands-on projects, including working in collaborative team environments.
 
 ---
 
+### Education
+RS School JavaScript Front-end Development, Angular (2023 - 2025)<br>
+IT Academy WEBSITE DEVELOPMENT WITH HTML, CSS & JAVASCRIPT (March 2022 - July 2022)<br>
+Educational Institution "Private Institute of Management and Entrepreneurship" Bachelor's degree, Law
+(September 2011 - June 2020)
+
+---
+
 ## Skills:
 
 - HTML;
