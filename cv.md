@@ -11,9 +11,12 @@ Location: Wrocław, Dolnośląskie, Polska
 
 ---
 
-## Summary:
+### Summary:
 
-My main purpose for taht course it's improving my programming skills and English. I have some experience in creating web pages, web applications, scripting. Previously, I finished IT Academy in Belarus, RS school - stages 0-2 in Russian.
+Enthusiastic and detail-oriented junior front-end developer with a strong foundation in HTML, CSS, and JavaScript,
+as well as basic knowledge of framework Angular framework. Advanced in using Git for version control and familiar
+with Agile tools like Jira. Experienced in building responsive, user-friendly websites and interactive web applications
+through hands-on projects, including working in collaborative team environments.
 
 ---
 
