@@ -20,13 +20,18 @@ through hands-on projects, including working in collaborative team environments.
 
 ---
 
-### Education
+### Education:
 RS School JavaScript Front-end Development, Angular (2023 - 2025)<br>
 IT Academy WEBSITE DEVELOPMENT WITH HTML, CSS & JAVASCRIPT (March 2022 - July 2022)<br>
 Educational Institution "Private Institute of Management and Entrepreneurship" Bachelor's degree, Law
 (September 2011 - June 2020)
 
 ---
+
+### Experience:
+
+Experience Main Department of Internal Affairs of the Minsk City Executive Committee Logistics Department
+Specialist October 2012 - September 2022 (10 years) Minsk, Belarus
 
 ## Skills:
 
@@ -84,14 +89,6 @@ Educational Institution "Private Institute of Management and Entrepreneurship" B
         return stack.length === 0;
     }
 ```
-
----
-
-## Education
-
-- Private Institute of Management and Entrepreneurship (lawyer);
-- IT Academy (HTML,CSS,JS);
-- RS School (in process...);
 
 ---
 
