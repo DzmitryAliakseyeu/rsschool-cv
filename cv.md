@@ -4,9 +4,9 @@
 
 ### Contact Information:
 
-Mobile: +48690410321
-Email: [](dmitry.alekseev.s@gmail.com)
-LinkedIn: [](www.linkedin.com/in/dzmitry-aliakseyeu-16a388234)
+Mobile: +48690410321<br>
+Email: [](dmitry.alekseev.s@gmail.com)<br>
+LinkedIn: [](www.linkedin.com/in/dzmitry-aliakseyeu-16a388234)<br>
 Location: Wrocław, Dolnośląskie, Polska
 
 ---
