@@ -35,7 +35,7 @@ Specialist October 2012 - September 2022 (10 years) Minsk, Belarus
 
 ---
 
-## Skills:
+### Skills:
 
 HTML5, CSS3 (Flexbox, Grid, Responsive Design), JavaScript (ES6+, DOM Manipulation, Event Handling, OOP,
 Asynchronous Programming), Git (commits, branching, pull requests), Angular, TypeScript, REST API integration,
@@ -43,7 +43,7 @@ Chrome DevTools, NPM, Agile methodologies, Jira, collaborative project developme
 
 ---
 
-## Code example:
+### Code example:
 
 ```
     function check(str, bracketsConfig) {
@@ -86,19 +86,19 @@ Chrome DevTools, NPM, Agile methodologies, Jira, collaborative project developme
 
 ---
 
-## Languages
+### Languages:
 
-- Russian - Native;
-- Belarussian - B2;
-- English - B1;
-- Polish - A2;
+- Russian - Native
+- Belarussian - B2
+- English - B1
+- Polish - A2
 
 ---
 
-# Hobbies
+### Hobbies:
 
-- Learning new languages;
-- Hikking;
-- Traveling;
-- Reading books;
-- Listening to music;
+- Learning new languages
+- Hikking
+- Traveling
+- Reading books
+- Listening to music
