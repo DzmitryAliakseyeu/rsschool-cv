@@ -30,22 +30,16 @@ Educational Institution "Private Institute of Management and Entrepreneurship" B
 
 ### Experience:
 
-Experience Main Department of Internal Affairs of the Minsk City Executive Committee Logistics Department
+Experience Main Department of Internal Affairs of the Minsk City Executive Committee Logistics Department<br>
 Specialist October 2012 - September 2022 (10 years) Minsk, Belarus
+
+---
 
 ## Skills:
 
-- HTML;
-- CSS;
-- JavaScript;
-- Git;
-- Figma;
-- Typescript (Basic);
-- React (Basic);
-- Scss/Sass;
-- OOP;
-- Jira;
-- Scrum;
+HTML5, CSS3 (Flexbox, Grid, Responsive Design), JavaScript (ES6+, DOM Manipulation, Event Handling, OOP,
+Asynchronous Programming), Git (commits, branching, pull requests), Angular, TypeScript, REST API integration,
+Chrome DevTools, NPM, Agile methodologies, Jira, collaborative project development, team leadership (task delegation, coordination).
 
 ---
 
