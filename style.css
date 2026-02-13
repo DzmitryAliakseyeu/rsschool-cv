@@ -189,6 +189,10 @@ body main .container__details {
    
 }
 
+body main .container__details h3{
+    display: none; 
+}
+
 body main .container__details .contacts {
     grid-row: 1;
     grid-column: 1;
