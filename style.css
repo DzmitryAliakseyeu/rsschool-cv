@@ -50,6 +50,8 @@ h1, h3 {
     color: #000000af;
 }
 
+
+
 h4 {
     display: none;
 }
@@ -167,6 +169,10 @@ body main .container__personal-data .personal-data__logo-info {
     display: flex;
     flex-direction: column;
     text-align: center;
+}
+
+body main .container__personal-data .personal-data__logo-info h2 {
+    background-color: transparent;
 }
 
 body main .container__personal-data img {
